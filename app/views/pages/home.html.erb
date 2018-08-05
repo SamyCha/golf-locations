@@ -43,18 +43,36 @@
 
 <div class="container">
   <!-- HOMES -->
-  <div class='text-center'><h3>Discover our Homes</h3></div>
-  <br/>
+  <div class='text-center'><h3><i class="fas fa-golf-ball"></i> Discover our Homes</h3>
+
+
+ <h4>Our accomodations around golf courses</h4><br/>
+</div>
+
 
   <div class="row">
     <%= render partial: "rooms/rooms_list", locals: {rooms: @rooms} %>
   </div>
 
-
+<hr>
+  <div class="row text-center">
+        <div class='col-xs-12 col-md-4'>
+      <%= image_tag 'golfer.png', height: 60 %><br>
+      Our houses are selected to offer the best stay in your favorite golf courses.<br> Access easily to your party by cart or by walking.
+    </div>
+    <div class='col-xs-12 col-md-4'>
+    <%= image_tag 'house.png', height: 60 %><br>
+      Rent for few days, a week or longer a nice villa with confort.
+    </div>
+    <div class='col-xs-12 col-md-4'>
+        <%= image_tag 'review.png', height: 60 %><br>
+      Benefit from the other experiences to book your place.
+    </div>
+  </div>
+  <hr>
 
   <!-- CITIES -->
   <div> <h3>Homes around Golf Courses</h3></div>
-  <br/>
 
   <div class="row">
     <div class="col-md-3 col-sm-12">
